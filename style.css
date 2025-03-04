@@ -287,27 +287,61 @@ body {
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
+    /* Navbar Adjustments */
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1f1f1f;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
     /* Home Section Adjustments */
     .home-section {
         flex-direction: column;
         height: auto;
         padding: 100px 20px 50px;
+        text-align: center;
+        /* justify-content: space-evenly; */
     }
 
     .home-content {
         width: 100%;
         margin: 0;
         padding: 0;
-        text-align: center;
     }
 
     .home-img {
-        margin-top: 30px;
-        text-align: center;
+        margin-top: 0px;
+
     }
 
     .dev-png {
-        position: static;
         max-width: 250px;
         height: auto;
         margin: 0 auto;
@@ -342,9 +376,15 @@ body {
         padding: 20px;
     }
 
+    .skill-info-con {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
     .tech-container {
         width: 100%;
-        margin: 0 auto;
+        margin: 20px auto;
         justify-content: center;
     }
 
@@ -354,25 +394,15 @@ body {
         margin: 10px 0;
     }
 
-    /* Navbar Adjustments */
-    .nav-links {
-        position: fixed;
-        top: 60px;
-        right: -100%;
-        width: 100%;
-        height: calc(100vh - 60px);
-        background: #1f1f1f;
-        flex-direction: column;
-        transition: 0.3s;
-        padding-top: 20px;
+    /* Fix UI/UX Box Overlapping */
+    .ui {
+        height: auto;
+        width: 100px;
     }
 
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
+    /* Adjust Technology & Tools Section */
+    .right-side {
+        order: -1; /* Move "Technology & Tools" above "Skills" */
     }
 }
 
@@ -397,19 +427,9 @@ body {
     .tech-card h3 {
         font-size: 14px;
     }
-
-    /* Navbar Logo Adjustment */
-    .logo {
-        font-size: 18px;
-    }
 }
 
-/* Mobile Menu Active State */
-.nav-links.active {
-    display: flex;
-}
-
-/* Prevent Horizontal Overflow */
+/* General Improvements */
 html, body {
     max-width: 100%;
     overflow-x: hidden;
