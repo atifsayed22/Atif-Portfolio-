@@ -158,12 +158,13 @@ body {
 /* skills section */
 
 .skill-section {
-    height: auto; /* Allow height to adjust based on content */
+    height: 80vh; /* Allow height to adjust based on content */
     padding: 50px 20px; /* Add padding for spacing */
     background-color: #1a1a1a;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
+    /* background-color: rgb(124, 21, 203); */
 }
 
 .skill-heading {
@@ -181,31 +182,40 @@ body {
 
 .skill-tech {
     display: flex;
-    flex-direction: column; /* Stack vertically on all screens */
-    width: 100%;
-    max-width: 1200px; /* Limit width for larger screens */
-    gap: 30px; /* Add space between sections */
+    flex-direction: row; /* Stack vertically on all screens */
+
 }
 
-.skill-container, .tech-container {
-    width: 100%; /* Full width for both containers */
+ .tech-container {
+    width: 100vw; /* Full width for both containers */
+    /* background-color: #00cc07; */
+    height: 60vh;
+    margin-top:20px ;
 }
 
 .skill-container {
     display: flex;
+    height: 65vh;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Add space between skill cards */
+    gap: 25px;
+    /* background-color: aqua; */
+    width: 90vw;
+
 }
 
 .skill-info {
-    width: 40%; /* Two cards per row with gap */
-    height: auto;
+    width: 45%; /* Two cards per row with gap */
     background-color: #1f1f1f;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 25px 0px;
+    height: 25vh;
 }
 
 .skill-info-con {
@@ -213,6 +223,10 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px; /* Add space between image and text */
+}
+.image-size{
+    width: 100px;
+    height: 100px;
 }
 
 .tech-container {
@@ -288,10 +302,15 @@ body {
     /* Home Section Adjustments */
     .home-section {
         flex-direction: column;
-        height: auto;
+        height: 60vh;
         padding: 100px 20px 50px;
         text-align: center;
         /* justify-content: space-evenly; */
+    }
+    .about-text{
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 40px;
     }
 
     .home-content {
@@ -302,6 +321,9 @@ body {
 
     .home-img {
         margin-top: 0px;
+        position: relative;
+        bottom: 10px;
+        right: 25px;
 
     }
 
@@ -313,7 +335,7 @@ body {
 
     /* Skills Section Adjustments */
     .skill-section {
-        height: auto;
+        height: ;
         padding: 50px 20px;
     }
 
@@ -329,10 +351,14 @@ body {
 
     .skill-container {
         width: 100%;
+        height: 100vh;
         margin: 20px 0;
+        /* background-color: #cc0029; */
         justify-content: center;
     }
-
+    .image-size{
+        
+    }
     .skill-info {
         width: 80%;
         height: auto;
@@ -347,9 +373,11 @@ body {
     }
 
     .tech-container {
-        width: 100%;
+        width: 90%;
         margin: 20px auto;
-        justify-content: center;
+        /* justify-content: center; */
+        display: flex;
+        flex-direction: row;
     }
 
     .tech-card {
@@ -386,6 +414,9 @@ body {
 
     .gradient-text {
         font-size: 1.5rem;
+        background: linear-gradient(90deg, #ff0033, #ff6600);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .tech-card h3 {
@@ -397,4 +428,9 @@ body {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+.gradient-text{
+    background: linear-gradient(90deg, #ff0033, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
