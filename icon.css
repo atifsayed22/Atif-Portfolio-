@@ -1,0 +1,65 @@
+<div class="skills-container">
+<div class="skill">
+    <div class="progress-container">
+        <svg width="120" height="120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="progress-bar" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="percentage">75%</div>
+        <p>HTML</p>
+    </div>
+</div>
+<div class="skill">
+    <div class="progress-container">
+        <svg width="120" height="120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="progress-bar" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="percentage">70%</div>
+        <p>CSS</p>
+    </div>
+
+</div>
+<div class="skill">
+    <div class="progress-container">
+        <svg width="120" height="120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="progress-bar" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="percentage">80%</div>
+        <p>JavaScript</p>
+    </div>
+
+</div>
+<div class="skill">
+    <div class="progress-container">
+        <svg width="120" height="120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="progress-bar" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="percentage">80%</div>
+        <p>SQL</p>
+    </div>
+</div>
+<div class="skill">
+    <div class="progress-container">
+        <svg width="120" height="120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="progress-bar" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="percentage">75%</div>
+        <p>C</p>
+    </div>
+</div>
+<div class="skill">
+    <div class="progress-container">
+        <svg width="120" height="120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="progress-bar" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="percentage">85%</div>
+        <p>Canva</p>
+    </div>
+</div>
+</div>
+</div>
